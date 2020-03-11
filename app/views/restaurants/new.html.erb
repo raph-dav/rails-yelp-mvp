@@ -1,0 +1,9 @@
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :name, required: true %>
+  <%= f.input :address, required: true %>
+  <%= f.input :category, required: true %>
+  <%= f.input :phone_number %>
+  <%= f.button :submit %>
+<% end %>
